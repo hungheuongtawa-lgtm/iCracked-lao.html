@@ -1,1 +1,271 @@
-<script src="https://gist.github.com/hungheuongtawa-lgtm/cc516969189408a7fc8d88d5e06e4eca.js"></script>
+`html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCracked Lao | Professional Device Repair</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
+        }
+
+        .chip {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white shadow-sm border-b">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <i class="fas fa-tools text-blue-600 text-2xl"></i>
+                <span class="text-xl font-bold tracking-tight text-blue-900 uppercase">Icrackedlao</span>
+            </div>
+            <div class="hidden md:flex gap-6 font-medium text-sm">
+                <a href="#services" class="hover:text-blue-600">Services</a>
+                <a href="#pricing" class="hover:text-blue-600">Pricing</a>
+                <a href="#contact" class="hover:text-blue-600">Contact</a>
+            </div>
+            <a href="tel:+8562092934363" class="bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-blue-700 transition">
+                Call Now
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="gradient-bg text-white py-16 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Fast & Reliable Repair</h1>
+            <p class="text-blue-100 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                Vientiane's trusted experts for smartphones, laptops, and PC maintenance. No fix, no fee!
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#services" class="bg-white text-blue-900 px-8 py-3 rounded-lg font-bold shadow-lg">View Services</a>
+                <a href="#contact" class="bg-blue-500/20 border border-blue-400 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-500/30 transition">Get Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-20 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-2">Our Repair Services</h2>
+            <p class="text-gray-500">Professional solutions for all your electronic needs</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Phone Repair -->
+            <div class="service-card bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-mobile-alt text-blue-600 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Phone Repair</h3>
+                <p class="text-gray-600 mb-6 text-sm leading-relaxed">
+                    Screen replacements, battery changes, and water damage recovery for iPhone & Android.
+                </p>
+                <div class="flex items-end justify-between border-t pt-4">
+                    <span class="text-xs text-gray-400 font-semibold uppercase">Starts From</span>
+                    <span class="text-blue-600 font-bold">10,000 Kip</span>
+                </div>
+            </div>
+
+            <!-- Tablet Repair -->
+            <div class="service-card bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
+                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-tablet-alt text-purple-600 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Tablet Repair</h3>
+                <p class="text-gray-600 mb-6 text-sm leading-relaxed">
+                    iPad and Android tablet servicing. High-quality parts and expert micro-soldering.
+                </p>
+                <div class="flex items-end justify-between border-t pt-4">
+                    <span class="text-xs text-gray-400 font-semibold uppercase">Starts From</span>
+                    <span class="text-purple-600 font-bold">20,000 Kip</span>
+                </div>
+            </div>
+
+            <!-- Laptop Repair -->
+            <div class="service-card bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
+                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-laptop text-green-600 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Laptop Repair</h3>
+                <p class="text-gray-600 mb-6 text-sm leading-relaxed">
+                    Hardware upgrades, keyboard replacement, and screen fixes for MacBook & Windows laptops.
+                </p>
+                <div class="flex items-end justify-between border-t pt-4">
+                    <span class="text-xs text-gray-400 font-semibold uppercase">Starts From</span>
+                    <span class="text-green-600 font-bold">300,000 Kip</span>
+                </div>
+            </div>
+
+            <!-- PC Repair -->
+            <div class="service-card bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
+                <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-desktop text-red-600 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">PC Repair</h3>
+                <p class="text-gray-600 mb-6 text-sm leading-relaxed">
+                    General maintenance, dusting, and thermal paste application for desktop towers.
+                </p>
+                <div class="flex items-end justify-between border-t pt-4">
+                    <span class="text-xs text-gray-400 font-semibold uppercase">Starts From</span>
+                    <span class="text-red-600 font-bold">5,000 Kip</span>
+                </div>
+            </div>
+
+            <!-- Software Change -->
+            <div class="service-card bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
+                <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-code text-orange-600 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Software Change</h3>
+                <p class="text-gray-600 mb-6 text-sm leading-relaxed">
+                    OS installation, virus removal, data recovery, and firmware updates.
+                </p>
+                <div class="flex items-end justify-between border-t pt-4">
+                    <span class="text-xs text-gray-400 font-semibold uppercase">Starts From</span>
+                    <span class="text-orange-600 font-bold">100,000 Kip</span>
+                </div>
+            </div>
+
+            <!-- Warranty Info -->
+            <div class="service-card bg-blue-600 p-8 rounded-2xl shadow-sm text-white">
+                <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-shield-alt text-white text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Service Warranty</h3>
+                <p class="text-blue-100 mb-6 text-sm leading-relaxed">
+                    All our hardware repairs come with a standard 30-day warranty for your peace of mind.
+                </p>
+                <a href="#contact" class="inline-block text-sm font-bold border-b-2 border-white pb-1">Ask our experts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Table -->
+    <section id="pricing" class="bg-gray-100 py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Detailed Price Range</h2>
+                <p class="text-gray-500 italic text-sm">Prices vary based on parts and complexity</p>
+            </div>
+            
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+                <div class="grid grid-cols-2 md:grid-cols-3 bg-gray-900 text-white p-4 font-bold text-sm uppercase tracking-wider">
+                    <div class="px-4">Service</div>
+                    <div class="px-4 text-center">Minimum</div>
+                    <div class="hidden md:block px-4 text-right">Maximum</div>
+                </div>
+                
+                <!-- Pricing Rows -->
+                <div class="divide-y">
+                    <div class="grid grid-cols-2 md:grid-cols-3 p-5 items-center hover:bg-blue-50 transition">
+                        <div class="px-4 font-semibold text-blue-900">Phone Repair</div>
+                        <div class="px-4 text-center text-sm">10,000 Kip</div>
+                        <div class="hidden md:block px-4 text-right font-medium">5,000,000 Kip</div>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 p-5 items-center hover:bg-blue-50 transition">
+                        <div class="px-4 font-semibold text-blue-900">Tablet Repair</div>
+                        <div class="px-4 text-center text-sm">20,000 Kip</div>
+                        <div class="hidden md:block px-4 text-right font-medium">5,000,000 Kip</div>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 p-5 items-center hover:bg-blue-50 transition">
+                        <div class="px-4 font-semibold text-blue-900">Laptop Repair</div>
+                        <div class="px-4 text-center text-sm">300,000 Kip</div>
+                        <div class="hidden md:block px-4 text-right font-medium">5,000,000 Kip</div>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 p-5 items-center hover:bg-blue-50 transition">
+                        <div class="px-4 font-semibold text-blue-900">PC Repair</div>
+                        <div class="px-4 text-center text-sm">5,000 Kip</div>
+                        <div class="hidden md:block px-4 text-right font-medium">300,000 Kip</div>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 p-5 items-center hover:bg-blue-50 transition">
+                        <div class="px-4 font-semibold text-blue-900">Software Change</div>
+                        <div class="px-4 text-center text-sm">100,000 Kip</div>
+                        <div class="hidden md:block px-4 text-right font-medium">10,000,000 Kip</div>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-6 text-center text-xs text-gray-400 px-10">
+                * Note: 5,000 Kip PC repair typically applies to diagnostic check or external cleaning only. Hardware components are priced separately.
+            </p>
+        </div>
+    </section>
+
+    <!-- Simple Estimate Tool -->
+    <section class="py-20 px-4 max-w-4xl mx-auto">
+        <div class="bg-blue-600 rounded-3xl p-8 md:p-12 text-white text-center shadow-2xl">
+            <h2 class="text-2xl font-bold mb-6">Need an Instant Estimate?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                <select id="deviceSelect" class="bg-white text-gray-900 p-4 rounded-xl font-medium focus:ring-4 focus:ring-blue-300 transition">
+                    <option value="none">Select Device Type</option>
+                    <option value="phone">Phone</option>
+                    <option value="tablet">Tablet</option>
+                    <option value="laptop">Laptop</option>
+                    <option value="pc">Desktop PC</option>
+                    <option value="software">Software Only</option>
+                </select>
+                <div class="bg-blue-700/50 flex items-center justify-center p-4 rounded-xl border border-blue-400/30">
+                    <span id="rangeOutput" class="text-xl font-bold">--- Kip</span>
+                </div>
+            </div>
+            <p class="text-blue-100 text-sm">Prices shown are ballpark figures based on standard repairs.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-white border-t py-12 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-12">
+            <div class="max-w-xs">
+                <div class="flex items-center gap-2 mb-4">
+                    <i class="fas fa-tools text-blue-600 text-xl"></i>
+                    <span class="text-lg font-bold text-blue-900 uppercase">iCracked Lao</span>
+                </div>
+                <p class="text-sm text-gray-500 leading-relaxed mb-6">
+                    Providing high-quality hardware and software repair services across Laos for over 5 years.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="text-gray-400 hover:text-blue-600"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-600"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-600"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-12">
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-4">Location</h4>
+                    <p class="text-sm text-gray-500">
+                        Samakhixai Village,<br>
+                        Thaphabath District,<br>
+                        Bolikhamxai, Laos
+                    </p>
+                </div>
+                <div>
+                    <h4 class
